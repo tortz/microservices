@@ -1,0 +1,31 @@
+#LOCAL
+
+https://localhost:5001/api/platforms
+
+#CreatePlatform
+POST https://localhost:5001/api/platforms HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "ggg",
+    "publisher": "ggg",
+    "cost": "Free"
+}
+
+#KUBERNETES
+
+#Get Platforms
+http://localhost:31469/api/platforms
+
+#Get Platform By Id
+http://localhost:31469/api/platforms/1
+
+#CreatePlatform
+POST http://localhost:31469/api/platforms HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "ggg1",
+    "publisher": "ggg1",
+    "cost": "Free"
+}
